@@ -49,6 +49,16 @@ class TestMathLib(unittest.TestCase):
         # then
         self.assertEqual(0.75, math_request.get_res())
 
+    def test_execute_mod_get_result(self):
+        # given
+        math_request = MathRequest(7, 'mod', 2)
+
+        # when
+        MathLib.execute(math_request)
+
+        # then
+        self.assertEqual(1, math_request.get_res())
+
     def test_execute_div_throw_exception(self):
         # given
         math_request = MathRequest(3, 'not_supported_operator', 4)

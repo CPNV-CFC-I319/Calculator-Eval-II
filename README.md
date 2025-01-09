@@ -26,14 +26,17 @@ git clone <url de votre dépôt forké>
 
 * Résultat obtenu pour test_MathRequest
 
+//TODO
 ![MathRequestTests.png](docs/MathRequestTests.png)
 
 * Résultat obtenu pour test_MathLib
 
+//TODO
 ![MathLibTests.png](docs/MathLibTests.png)
 
 3. Etudier l'architecture du code
 
+//TODO
 ![diagramme de classes](./docs/class_diagram.png)
 
 * Identifiez bien les différentes classes ainsi que leur relations.
@@ -59,7 +62,7 @@ Les critères suivants sont pris en compte:
 * Un maximum de tests est validé.
 
 Note :
-Commentez les lignes de codes qui empêche l'exécution des tests, mais ne supprimez pas le code.
+Commentez les lignes de codes qui empêchent l'exécution des tests, mais ne supprimez pas le code.
 
 ---
 
