@@ -59,7 +59,7 @@ class TestMathLib(unittest.TestCase):
         # then
         self.assertEqual(1, math_request.get_res())
 
-    def test_execute_div_throw_exception(self):
+    def test_execute_not_supported_operator_throw_exception(self):
         # given
         math_request = MathRequest(3, 'not_supported_operator', 4)
 

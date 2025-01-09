@@ -8,16 +8,11 @@ class MathFun:
 
         match operator:
             case 'max':
-                # help : https://www.geeksforgeeks.org/ternary-operator-in-python/
-                if ope1 == ope2:
-                    raise EqualityException
-                return ope1 if ope1 > ope2 else ope2
+                raise NotImplementedError
             case 'is_sum_even':
-                res = ope1 + ope2
-                mod = res % 2
-                return True if mod == 0 else False
+                raise NotImplementedError
             case _:
-                raise FunOperatorNotSupportedException
+                raise NotImplementedError
 
 class MathFunException(Exception):
     pass

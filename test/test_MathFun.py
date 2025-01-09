@@ -40,5 +40,13 @@ class TestMatFun(unittest.TestCase):
         # when + then
         self.assertEqual(False, MathFun.execute(math_request))
 
+    def test_execute_not_supported_fun_operator_throw_exception(self):
+        # given
+        math_request = MathRequest(3, 'not_supported_fun_operator', 4)
+
+        # when # then
+        self.assertRaises(FunOperatorNotSupportedException, MathFun.execute, math_request)
+
+
 if __name__ == '__main__':
     unittest.main()
