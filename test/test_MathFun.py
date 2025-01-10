@@ -13,10 +13,7 @@ class TestMatFun(unittest.TestCase):
         # given
         math_request = MathRequest(3, 'max', 4)
 
-        # when
-        MathFun.execute(math_request)
-
-        # then
+        # when and then
         self.assertEqual(4, MathFun.execute(math_request))
 
     def test_execute_max_equality_throw_exception(self):
@@ -30,21 +27,21 @@ class TestMatFun(unittest.TestCase):
         # given
         math_request = MathRequest(2, 'is_sum_even', 4)
 
-        # when + then
+        # when and then
         self.assertEqual(True, MathFun.execute(math_request))
 
     def test_execute_is_sum_even_false(self):
         # given
         math_request = MathRequest(3, 'is_sum_even', 4)
 
-        # when + then
+        # when and then
         self.assertEqual(False, MathFun.execute(math_request))
 
     def test_execute_not_supported_fun_operator_throw_exception(self):
         # given
         math_request = MathRequest(3, 'not_supported_fun_operator', 4)
 
-        # when # then
+        # when and then
         self.assertRaises(FunOperatorNotSupportedException, MathFun.execute, math_request)
 
 

@@ -19,10 +19,8 @@ class MathLib{
  + execute(MathRequest: mathRequest):void
 }
 
-class MathLibException{
-}
-
-class OperatorNotSupportedException{
+class MathFun{
+ + execute(MathRequest: mathRequest):bool|float
 }
 
 class main{
@@ -37,8 +35,12 @@ class main{
 
 main .-> MathRequest
 MathLib .-> MathRequest
+MathFun .-> MathRequest
 main .-> MathLib
+main .-> MathFun
 MathLib .-> MathLibException
 OperatorNotSupportedException -|> MathLibException
+MathFun .-> MathFunException
+FunOperatorNotSupportedException -|> MathFunException
 
 @enduml
