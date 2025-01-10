@@ -8,11 +8,14 @@ class MathFun:
 
         match operator:
             case 'max':
-                raise NotImplementedError
+                if ope1 == ope2:
+                    raise EqualityException
+                return ope1 if ope1 > ope2 else ope2
             case 'is_sum_even':
-                raise NotImplementedError
+                res = ope1 + ope2
+                return True if res % 2 == 0 else False
             case _:
-                raise NotImplementedError
+                raise FunOperatorNotSupportedException
 
 class MathFunException(Exception):
     pass

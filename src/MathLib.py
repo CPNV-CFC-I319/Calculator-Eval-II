@@ -18,7 +18,7 @@ class MathLib:
             case 'mod':
                 math_request.set_res(ope1 % ope2)
             case 'pow':
-                math_request.set_res(ope1 * ope2)
+                math_request.set_res(ope1 ** ope2)
             case 'root':
                 math_request.set_res(cls.__root(ope1, ope2))
             case _:
