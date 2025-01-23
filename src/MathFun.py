@@ -18,7 +18,7 @@ class MathFun:
                 res = ope1 + ope2
                 return True if res % 2 == 0 else False
             case _:
-                raise NotImplementedError
+                raise FunOperatorNotSupportedException
 
 class MathFunException(Exception):
     pass
