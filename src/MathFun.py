@@ -1,3 +1,6 @@
+from winerror import ERROR_QUOTA_LIST_INCONSISTENT
+
+
 class MathFun:
 
     @classmethod
@@ -8,6 +11,8 @@ class MathFun:
 
         match operator:
             case 'max':
+                if ope1 == ope2:
+                    raise EqualityException
                 return ope1 if ope1 > ope2 else ope2
             case 'is_sum_even':
                 raise NotImplementedError
