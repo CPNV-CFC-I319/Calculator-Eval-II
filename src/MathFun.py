@@ -8,7 +8,7 @@ class MathFun:
 
         match operator:
             case 'max':
-                raise NotImplementedError
+                return ope1 if ope1 > ope2 else ope2
             case 'is_sum_even':
                 raise NotImplementedError
             case _:
