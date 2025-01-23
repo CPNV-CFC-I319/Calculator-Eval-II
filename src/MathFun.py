@@ -1,4 +1,4 @@
-from winerror import ERROR_QUOTA_LIST_INCONSISTENT
+from src.MathLib import MathLib
 
 
 class MathFun:
@@ -15,7 +15,8 @@ class MathFun:
                     raise EqualityException
                 return ope1 if ope1 > ope2 else ope2
             case 'is_sum_even':
-                raise NotImplementedError
+                res = ope1 + ope2
+                return True if res % 2 == 0 else False
             case _:
                 raise NotImplementedError
 
